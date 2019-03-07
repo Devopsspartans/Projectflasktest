@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block page %}{{title}}{% endblock %}
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<div class="container">
+
+  <h2 class="text-center">AWS Services</h2>
+<br/>
+  <br/>
+    <form>
+         {% for user in response %}
+  <input type="checkbox" name="{ user.Service}}" value="{ user.Service}}"> {{ user.Service}}<br>
+
+        {% endfor %}
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+{% endblock %}

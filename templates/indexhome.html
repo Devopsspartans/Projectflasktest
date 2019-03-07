@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block page %}{{title}}{% endblock %}
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+<div class="container">
+
+  <h2 class="text-center">Our Services</h2>
+<br/>
+  <br/>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/aws_course" target="_blank">
+          <img src="static/img/food_img.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p class="text-center">Azure</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/aws_course" target="_blank">
+          <img src="static/img/travels_img.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p class="text-center">AWS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="static/img/hotel_img.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p class="text-center">GCP</p>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
